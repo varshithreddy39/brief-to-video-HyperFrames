@@ -1,6 +1,25 @@
 # brief-to-video — HyperFrames
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?logo=pydantic&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI%20SDK-latest-412991?logo=openai&logoColor=white)
+![HyperFrames](https://img.shields.io/badge/HyperFrames-0.8.27-black)
+![GSAP](https://img.shields.io/badge/GSAP-3.12.5-88CE02?logo=greensock&logoColor=white)
+
+## Tech stack
+
+| Layer | Technology |
+|-------|-----------|
+| Planning & repair | [OpenAI Python SDK](https://github.com/openai/openai-python) — `gpt-5.5` structured output |
+| Image generation | OpenAI `gpt-image-2` via the same SDK |
+| Data validation | [Pydantic v2](https://docs.pydantic.dev/) — typed `VideoPlan`, schema + semantic validation |
+| Composition & animation | [HyperFrames](https://www.npmjs.com/package/hyperframes) + [GSAP 3](https://gsap.com/) |
+| Rendering | HyperFrames `--docker` (headless Chrome) |
+| MP4 verification | `ffprobe` (via subprocess) |
+| Config / secrets | [python-dotenv](https://github.com/theskumar/python-dotenv) |
+
+---
 
 An end-to-end generator that turns a plain-language creative brief into a
 validated MP4 motion-graphics advertisement. It plans first with `gpt-5.5`,
