@@ -1,0 +1,15 @@
+Starting pipeline. run_id=d4b95c79d1266dbb
+Generating VideoPlan with GPT-5.5.
+Validating VideoPlan.
+Generating/reusing 1 asset(s).
+Compiling HyperFrames composition.
+HyperFrames attempt 0: ok=False
+Repair attempt 1/3. Issues: 1
+Recompiling after repair attempt 1.
+HyperFrames attempt 1: ok=False
+Repair attempt 2/3. Issues: 4
+Recompiling after repair attempt 2.
+HyperFrames attempt 2: ok=False
+Repair attempt 3/3. Issues: 1
+Recompiling after repair attempt 3.
+HyperFrames attempt 3: ok=False

@@ -1,0 +1,75 @@
+{
+  "assertions": [
+    {
+      "kind": "appearsBy",
+      "selector": "#s1_headline",
+      "bySec": 0.9
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s1_headline"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s1_image",
+      "bySec": 0.1
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s1_image"
+    },
+    {
+      "kind": "keepsMoving",
+      "selector": "#s1_image"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s2_headline",
+      "bySec": 4.85
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s2_headline"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s2_accent",
+      "bySec": 4.2
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s2_accent"
+    },
+    {
+      "kind": "keepsMoving",
+      "selector": "#s2_accent"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s3_header",
+      "bySec": 8.75
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s3_header"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s4_header",
+      "bySec": 12.85
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s4_header"
+    },
+    {
+      "kind": "appearsBy",
+      "selector": "#s5_button",
+      "bySec": 17.85
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#s5_button"
+    }
+  ]
+}

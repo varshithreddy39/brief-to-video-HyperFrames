@@ -1,0 +1,208 @@
+{
+  "ok": true,
+  "strict": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 356 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/venkatavarshithreddymettukuru/Downloads/motion-video-generator/runs/41083e755fe13009/composition/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 1.444,
+        "selector": "#scene_1_headline",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 110,
+          "top": -11,
+          "right": 698.89,
+          "bottom": 190.16,
+          "width": 588.89,
+          "height": 201.16
+        },
+        "containerSelector": "[data-composition-id=\"main\"]",
+        "text": "Work smarter, together",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 11
+        },
+        "dataAttributes": {
+          "data-role": "headline"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 110,
+          "y": -11,
+          "width": 588.89,
+          "height": 201.16
+        },
+        "firstSeen": 1.444,
+        "lastSeen": 4.333,
+        "occurrences": 2
+      }
+    ],
+    "duration": 26,
+    "samples": [
+      1.444,
+      4.333,
+      7.222,
+      10.111,
+      13,
+      15.889,
+      18.778,
+      21.667,
+      24.556
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "specPath": "/Users/venkatavarshithreddymettukuru/Downloads/motion-video-generator/runs/41083e755fe13009/composition/index.motion.json",
+    "samples": 300
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.84:1; WCAG AA requires 4.5:1.",
+        "text": "Summaries in seconds",
+        "fg": "rgb(0,0,0)",
+        "bg": "rgb(37,58,92)",
+        "ratio": 1.84,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(163,163,163)",
+        "large": false,
+        "selector": "main > section:nth-of-type(4) > div:nth-of-type(2) > div",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 66,
+          "y": 95,
+          "width": 171.109375,
+          "height": 20
+        },
+        "time": 18.778
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.09:1; WCAG AA requires 4.5:1.",
+        "text": "Meetings to actions",
+        "fg": "rgb(0,0,0)",
+        "bg": "rgb(41,66,109)",
+        "ratio": 2.09,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(174,174,174)",
+        "large": false,
+        "selector": "main > section:nth-of-type(4) > div:nth-of-type(3) > div",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 373.609375,
+          "y": 95,
+          "width": 148.328125,
+          "height": 20
+        },
+        "time": 18.778
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.6:1; WCAG AA requires 4.5:1.",
+        "text": "Knowledge on demand",
+        "fg": "rgb(0,0,0)",
+        "bg": "rgb(31,48,82)",
+        "ratio": 1.6,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(152,152,152)",
+        "large": false,
+        "selector": "main > section:nth-of-type(4) > div:nth-of-type(4) > div",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 663.4449462890625,
+          "y": 95.57499694824219,
+          "width": 164.156982421875,
+          "height": 18.850006103515625
+        },
+        "time": 18.778
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.444,
+      7.222,
+      13,
+      18.778,
+      24.556
+    ],
+    "checked": 16,
+    "passed": 13
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.27",
+    "latestVersion": "0.8.27",
+    "updateAvailable": false
+  }
+}

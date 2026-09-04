@@ -1,0 +1,40 @@
+Starting pipeline. run_id=41083e755fe13009
+Generating VideoPlan with GPT-5.5.
+Starting pipeline. run_id=41083e755fe13009
+Generating VideoPlan with GPT-5.5.
+Starting pipeline. run_id=41083e755fe13009
+Generating VideoPlan with GPT-5.5.
+Validating VideoPlan.
+Starting pipeline. run_id=41083e755fe13009
+Existing plan.json found. Reusing plan for deterministic rerun.
+Validating VideoPlan.
+Generating/reusing 2 asset(s).
+Compiling HyperFrames composition.
+Starting pipeline. run_id=41083e755fe13009
+Existing plan.json found. Reusing plan for deterministic rerun.
+Validating VideoPlan.
+Generating/reusing 2 asset(s).
+Compiling HyperFrames composition.
+Starting pipeline. run_id=41083e755fe13009
+Existing plan.json found. Reusing plan for deterministic rerun.
+Validating VideoPlan.
+Generating/reusing 2 asset(s).
+Compiling HyperFrames composition.
+HyperFrames attempt 0: ok=False
+Repair attempt 1/3. Issues: 1
+Repair attempt 1 failed: Repaired plan failed safety checks: Scene IDs/order changed during repair.
+Repair attempt 2/3. Issues: 1
+Repair attempt 2 failed: Repair model request failed: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=3000, prompt_tokens=3909, total_tokens=6909, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=3000, rejected_prediction_tokens=0, text_tokens=None), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cache_write_tokens=None, cached_tokens=3328, image_tokens=None, text_tokens=None), latency_checkpoint={'engine_tbt_ms': 15, 'engine_ttft_ms': 325, 'engine_ttlt_ms': 45905, 'pre_inference_ms': 188, 'service_tbt_ms': 15, 'service_ttft_ms': 917, 'service_ttlt_ms': 46491, 'user_visible_ttft_ms': 728})
+Repair attempt 3/3. Issues: 1
+Repair attempt 3 failed: Repaired plan failed safety checks: Scene IDs/order changed during repair.
+Starting pipeline. run_id=41083e755fe13009
+Existing plan.json found. Reusing plan for deterministic rerun.
+Validating VideoPlan.
+Generating/reusing 2 asset(s).
+Compiling HyperFrames composition.
+HyperFrames attempt 0: ok=True
+HyperFrames gate passed. Rendering MP4.
+Running render command:
+npx hyperframes render runs/41083e755fe13009/composition --docker -o runs/41083e755fe13009/renders/output.mp4
+Validating rendered MP4.
+Pipeline completed successfully.

@@ -1,0 +1,316 @@
+{
+  "version": "1.0",
+  "duration": 20.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "theme": "Cinematic enterprise AI: deep graphite backgrounds, crisp white typography, electric cyan accents, soft violet edge light, clean interface primitives, calm confident motion.",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "image",
+      "start": 0.0,
+      "duration": 4.0,
+      "text": [
+        "Meetings become action plans.",
+        "An AI assistant captures the chaos.",
+        "So the room can move forward."
+      ],
+      "visual": "Cinematic meeting-room chaos resolving into clarity.",
+      "design": {
+        "layout": "split_left",
+        "visual_intent": "Open on a cinematic, slightly tense meeting moment: blurred people, scattered laptops, coffee cups, and overlapping notes implied in the background. Keep the meeting image dark and uncluttered behind the typography, with the headline and two supporting lines stacked in a protected left-side copy zone with clear vertical separation so each block has its own readable space. The visual should immediately communicate the transformation from meeting noise to organized action.",
+        "focus_target": "s1_headline",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "continuous_motion": "The full-bleed meeting image slowly pushes in for the entire scene while the copy remains stable and readable in its protected zone.",
+        "visual_hierarchy": [
+          "main headline",
+          "chaotic meeting image",
+          "AI assistant supporting line",
+          "forward-motion payoff line"
+        ]
+      },
+      "motion": [
+        {
+          "type": "image_zoom",
+          "target": "s1_image",
+          "duration": 4.0,
+          "delay": 0.0
+        },
+        {
+          "type": "type_reveal",
+          "target": "s1_headline",
+          "duration": 0.75,
+          "delay": 0.15
+        },
+        {
+          "type": "fade_up",
+          "target": "s1_text_2",
+          "duration": 0.65,
+          "delay": 0.95
+        },
+        {
+          "type": "fade_up",
+          "target": "s1_text_3",
+          "duration": 0.65,
+          "delay": 2.45
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "feature",
+      "start": 4.0,
+      "duration": 4.0,
+      "text": [
+        "The AI listens.",
+        "Decisions, risks, open questions.",
+        "No one stops leading."
+      ],
+      "visual": "Transcript fragments becoming an organized signal.",
+      "design": {
+        "layout": "split_left",
+        "visual_intent": "Place concise copy on the left with each line in its own clear vertical zone. On the right, show an abstract accent system of meeting fragments visually compressing into one clean signal path, suggesting that the assistant is quietly capturing what matters while humans stay present.",
+        "focus_target": "s2_headline",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "continuous_motion": "The right-side accent field slowly scales and settles through the full scene, turning scattered conversation fragments into one organized path.",
+        "visual_hierarchy": [
+          "main headline",
+          "organizing accent field",
+          "captured meeting details",
+          "human-centered reassurance"
+        ]
+      },
+      "motion": [
+        {
+          "type": "scale_in",
+          "target": "s2_accent",
+          "duration": 4.0,
+          "delay": 0.0
+        },
+        {
+          "type": "type_reveal",
+          "target": "s2_headline",
+          "duration": 0.7,
+          "delay": 0.1
+        },
+        {
+          "type": "fade_up",
+          "target": "s2_text_2",
+          "duration": 0.65,
+          "delay": 0.9
+        },
+        {
+          "type": "fade_up",
+          "target": "s2_text_3",
+          "duration": 0.65,
+          "delay": 2.4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "type": "feature_grid",
+      "start": 8.0,
+      "duration": 4.0,
+      "text": [
+        "What it turns into",
+        "Decisions",
+        "Owners",
+        "Follow-ups"
+      ],
+      "visual": "A structured set of outcome cards replaces the noise.",
+      "design": {
+        "layout": "cards",
+        "visual_intent": "Shift from the previous organizing signal into a premium card grid. Each card represents a concrete meeting output, appearing one at a time so the viewer feels chaos converting into usable structure.",
+        "focus_target": "s3_header",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "continuous_motion": null,
+        "visual_hierarchy": [
+          "section header",
+          "decision outcome card",
+          "owner outcome card",
+          "follow-up outcome card"
+        ]
+      },
+      "motion": [
+        {
+          "type": "fade_up",
+          "target": "s3_header",
+          "duration": 0.6,
+          "delay": 0.1
+        },
+        {
+          "type": "scale_in",
+          "target": "s3_card_1",
+          "duration": 0.6,
+          "delay": 0.65
+        },
+        {
+          "type": "scale_in",
+          "target": "s3_card_2",
+          "duration": 0.6,
+          "delay": 1.25
+        },
+        {
+          "type": "scale_in",
+          "target": "s3_card_3",
+          "duration": 0.65,
+          "delay": 1.9
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "stats",
+      "start": 12.0,
+      "duration": 4.0,
+      "text": [
+        "Every meeting ends aligned.",
+        "Decisions",
+        "Owners",
+        "Deadlines"
+      ],
+      "visual": "Dashboard-style action plan summary.",
+      "design": {
+        "layout": "dashboard",
+        "visual_intent": "Reveal a clean action-plan dashboard: the header frames the promise, then three structured outputs appear like confirmed items in a meeting recap. The scene should feel precise, calm, and operational rather than flashy.",
+        "focus_target": "s4_header",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "continuous_motion": null,
+        "visual_hierarchy": [
+          "alignment headline",
+          "decision output",
+          "owner assignment",
+          "deadline clarity"
+        ]
+      },
+      "motion": [
+        {
+          "type": "type_reveal",
+          "target": "s4_header",
+          "duration": 0.65,
+          "delay": 0.1
+        },
+        {
+          "type": "fade_up",
+          "target": "s4_stat_1",
+          "duration": 0.7,
+          "delay": 0.85
+        },
+        {
+          "type": "fade_up",
+          "target": "s4_stat_2",
+          "duration": 0.7,
+          "delay": 1.55
+        },
+        {
+          "type": "fade_up",
+          "target": "s4_stat_3",
+          "duration": 0.8,
+          "delay": 2.85
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "cta",
+      "start": 16.0,
+      "duration": 4.0,
+      "text": [
+        "Leave with next steps.",
+        "Try it for your next meeting"
+      ],
+      "visual": "Calm final brand invitation with focused CTA.",
+      "design": {
+        "layout": "center_stage",
+        "visual_intent": "End with a clean, spacious CTA. The headline sits centered with a single clear action beneath it, keeping the final frame focused and easy to inspect.",
+        "focus_target": "s5_button",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "continuous_motion": null,
+        "visual_hierarchy": [
+          "final promise headline",
+          "CTA button"
+        ]
+      },
+      "motion": [
+        {
+          "type": "scale_in",
+          "target": "s5_headline",
+          "duration": 0.75,
+          "delay": 0.15
+        },
+        {
+          "type": "fade_up",
+          "target": "s5_button",
+          "duration": 0.7,
+          "delay": 1.05
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "s1_meeting_chaos_image",
+      "type": "image",
+      "prompt": "Cinematic wide shot of a tense modern meeting room moment with blurred professionals around a table, scattered laptops, notebooks, and coffee cups suggesting conversation overload, subject energy concentrated on the right half of frame, glass-and-walnut office environment with cool morning window light and a soft violet edge glow, left third kept dark, low-detail, and uncluttered for headline overlay, restrained graphite, cyan, and violet palette, premium product-film still, no readable text, no logos, no watermark.",
+      "scene_id": "s1"
+    }
+  ],
+  "motion_assertions": [
+    {
+      "selector": "s1_headline",
+      "appears_by": 0.9,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "s1_image",
+      "appears_by": 0.1,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": true
+    },
+    {
+      "selector": "s2_headline",
+      "appears_by": 4.85,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "s2_accent",
+      "appears_by": 4.2,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": true
+    },
+    {
+      "selector": "s3_header",
+      "appears_by": 8.75,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "s4_header",
+      "appears_by": 12.85,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "s5_button",
+      "appears_by": 17.85,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    }
+  ]
+}

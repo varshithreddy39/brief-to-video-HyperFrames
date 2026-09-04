@@ -1,0 +1,38 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Node / HyperFrames local state
+node_modules/
+npm-debug.log*
+.hyperframes/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore all runs except the two curated run-ID directories.
+# Rules: negate the specific run dirs, then re-ignore everything else inside runs/.
+/runs/*
+!/runs/41083e755fe13009/
+!/runs/d4b95c79d1266dbb/
+
+# This is an unfinished local vertical run, not submission evidence. The two
+# complete runs are curated under submission/runs/ separately.
+/submission/runs/4ba9de420c9166c5/
+
+# Local test suites and experimental HyperFrames output are not submission
+# evidence. The application source remains tracked; reviewers can run their
+# own tests after cloning.
+/tests/
+/hyperframes/generated/
+/briefs/

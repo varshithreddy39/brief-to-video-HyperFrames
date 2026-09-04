@@ -1,0 +1,31 @@
+const tl = gsap.timeline({ paused: true });
+
+tl.fromTo("#asset_hero_ai_workspace", {scale: 1}, {scale: 1.0, duration: 5.0}, 0.0);
+tl.fromTo("#scene_1_headline", {opacity: 0, clipPath: "inset(0 100% 0 0)"}, {opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 1.0}, 0.4);
+tl.fromTo("#scene_1_text_2", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.8}, 1.5);
+tl.fromTo("#scene_1_text_3", {opacity: 0}, {opacity: 1, duration: 0.7}, 2.7);
+tl.fromTo("#scene_1_accent", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.8}, 3.8);
+tl.fromTo("#scene_2_headline", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.7}, 5.3);
+tl.fromTo("#scene_2_text_2", {opacity: 0, x: -80}, {opacity: 1, x: 0, duration: 0.8}, 6.2);
+tl.fromTo("#scene_2_text_3", {opacity: 0, x: 80}, {opacity: 1, x: 0, duration: 0.8}, 7.4);
+tl.fromTo("#scene_2_accent", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.7}, 8.4);
+tl.fromTo("#scene_3_header", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.7}, 9.8);
+tl.fromTo("#scene_3_card_1", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6}, 10.6);
+tl.fromTo("#scene_3_card_2", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6}, 11.4);
+tl.fromTo("#scene_3_card_3", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6}, 12.4);
+tl.fromTo("#scene_3_card_4", {opacity: 0, y: 24}, {opacity: 1, y: 0, duration: 0.6}, 13.6);
+tl.fromTo("#scene_4_header", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.6}, 15.7);
+tl.fromTo("#scene_4_stat_1", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.7}, 16.4);
+tl.fromTo("#scene_4_stat_2", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.7}, 17.4);
+tl.fromTo("#scene_4_stat_3", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.7}, 18.5);
+tl.fromTo("#asset_command_center_dashboard", {scale: 1}, {scale: 1.0, duration: 3.5}, 20.0);
+tl.fromTo("#scene_5_headline", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.6}, 20.3);
+tl.fromTo("#scene_5_text_2", {opacity: 0}, {opacity: 1, duration: 0.7}, 21.2);
+tl.fromTo("#scene_5_accent", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.6}, 22.5);
+tl.fromTo("#scene_6_headline", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.5}, 23.6);
+tl.fromTo("#scene_6_button", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.5}, 24.3);
+tl.fromTo("#scene_6_spark_1", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.4}, 24.8);
+tl.fromTo("#scene_6_spark_2", {opacity: 0}, {opacity: 1, duration: 0.4}, 25.2);
+tl.fromTo("#scene_6_spark_3", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.4}, 25.5);
+
+window.__timelines["main"] = tl;

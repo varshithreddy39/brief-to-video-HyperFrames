@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "path": "runs/d4b95c79d1266dbb/renders/output.mp4",
+  "errors": [],
+  "metadata": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration": 20.0,
+    "size_bytes": 3530557
+  }
+}

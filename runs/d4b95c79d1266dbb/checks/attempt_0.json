@@ -1,0 +1,453 @@
+{
+  "ok": false,
+  "strict": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 314 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/venkatavarshithreddymettukuru/Downloads/motion-video-generator/runs/d4b95c79d1266dbb/composition/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 3,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 1,
+        "selector": "#s1_headline",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 153.59,
+          "top": 680.92,
+          "right": 960.09,
+          "bottom": 897.77,
+          "width": 806.5,
+          "height": 216.84
+        },
+        "containerSelector": "#s1_text_2",
+        "text": "Meetings become action plans.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-role": "headline"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 153.59,
+          "y": 680.92,
+          "width": 806.5,
+          "height": 216.84
+        },
+        "firstSeen": 1,
+        "lastSeen": 3.875,
+        "occurrences": 26
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 2.5,
+        "selector": "#s1_headline",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 153.59,
+          "top": 680.92,
+          "right": 960.09,
+          "bottom": 897.77,
+          "width": 806.5,
+          "height": 216.84
+        },
+        "containerSelector": "#s1_text_3",
+        "text": "Meetings become action plans.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-role": "headline"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 153.59,
+          "y": 680.92,
+          "width": 806.5,
+          "height": 216.84
+        },
+        "firstSeen": 2.5,
+        "lastSeen": 3.875,
+        "occurrences": 13
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 2.5,
+        "selector": "#s1_text_2",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 115.19,
+          "top": 855.02,
+          "right": 726.05,
+          "bottom": 901.02,
+          "width": 610.86,
+          "height": 46
+        },
+        "containerSelector": "#s1_text_3",
+        "text": "An AI assistant captures the chaos.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-role": "text"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 115.19,
+          "y": 855.02,
+          "width": 610.86,
+          "height": 46
+        },
+        "firstSeen": 2.5,
+        "lastSeen": 3.875,
+        "occurrences": 13
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 6.625,
+        "selector": "#s2_text_2",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 153.59,
+          "top": 668.59,
+          "right": 733.23,
+          "bottom": 759.91,
+          "width": 579.64,
+          "height": 91.31
+        },
+        "containerSelector": "#s2_text_3",
+        "text": "Captures decisions, risks, and open questions.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-role": "text"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 153.59,
+          "y": 668.59,
+          "width": 579.64,
+          "height": 91.31
+        },
+        "firstSeen": 6.625,
+        "lastSeen": 7.875,
+        "occurrences": 12
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.111,
+        "selector": "#s1_image",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -15.84,
+          "top": -8.91,
+          "right": 1935.84,
+          "bottom": 1088.91,
+          "width": 1951.68,
+          "height": 1097.82
+        },
+        "containerSelector": "#s1",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 15.84,
+          "right": 15.84,
+          "top": 8.91,
+          "bottom": 8.91
+        },
+        "dataAttributes": {
+          "data-role": "image",
+          "data-asset-id": "s1_meeting_chaos_image",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -15.84,
+          "y": -8.91,
+          "width": 1951.68,
+          "height": 1097.82
+        },
+        "firstSeen": 1.111,
+        "lastSeen": 1.111,
+        "occurrences": 1
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 3.333,
+        "selector": "#s1_image",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -47.52,
+          "top": -26.73,
+          "right": 1967.52,
+          "bottom": 1106.73,
+          "width": 2015.04,
+          "height": 1133.46
+        },
+        "containerSelector": "#s1",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 47.52,
+          "right": 47.52,
+          "top": 26.73,
+          "bottom": 26.73
+        },
+        "dataAttributes": {
+          "data-role": "image",
+          "data-asset-id": "s1_meeting_chaos_image",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -47.52,
+          "y": -26.73,
+          "width": 2015.04,
+          "height": 1133.46
+        },
+        "firstSeen": 3.333,
+        "lastSeen": 3.333,
+        "occurrences": 1
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 12.222,
+        "selector": "#s4_header",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 474.22,
+          "top": 202.19,
+          "right": 1445.78,
+          "bottom": 295.19,
+          "width": 971.56,
+          "height": 93
+        },
+        "containerSelector": "#s4_background",
+        "text": "Every meeting ends aligned.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.33,
+        "dataAttributes": {
+          "data-role": "headline"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 474.22,
+          "y": 202.19,
+          "width": 971.56,
+          "height": 93
+        },
+        "firstSeen": 12.222,
+        "lastSeen": 12.222,
+        "occurrences": 1
+      }
+    ],
+    "duration": 20,
+    "samples": [
+      1.111,
+      3.333,
+      5.556,
+      7.778,
+      10,
+      12.222,
+      14.444,
+      16.667,
+      18.889
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 7,
+    "truncated": false
+  },
+  "motion": {
+    "ok": false,
+    "errorCount": 2,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "motion_off_frame",
+        "severity": "error",
+        "time": 0.134,
+        "selector": "#s1_image",
+        "message": "#s1_image drifts off the 1920\u00d71080 canvas at 0.13s (box -1.92,-1.08\u21921921.92,1081.08)",
+        "rect": {
+          "left": -1.92,
+          "top": -1.08,
+          "right": 1921.92,
+          "bottom": 1081.08,
+          "width": 1923.84,
+          "height": 1082.16
+        },
+        "fixHint": "Clamp the element's motion so its box stays within the canvas for the whole shot.",
+        "dataAttributes": {
+          "data-role": "image",
+          "data-asset-id": "s1_meeting_chaos_image",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1.92,
+          "y": -1.08,
+          "width": 1923.84,
+          "height": 1082.16
+        },
+        "firstSeen": 0.134,
+        "lastSeen": 0.134,
+        "occurrences": 1
+      },
+      {
+        "code": "motion_appears_late",
+        "severity": "error",
+        "time": 4.548,
+        "selector": "#s2_accent",
+        "message": "appears at 4.55s but should be visible by 4.2s (check its entrance reveal fires under seek)",
+        "rect": {
+          "left": 115.19,
+          "top": 97.38,
+          "right": 272.42,
+          "bottom": 102,
+          "width": 157.23,
+          "height": 4.62
+        },
+        "fixHint": "The renderer seeks a paused timeline; a forward-only reveal can be skipped. Ensure the entrance is applied at this time, not only played through.",
+        "dataAttributes": {
+          "data-role": "accent"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 115.19,
+          "y": 97.38,
+          "width": 157.23,
+          "height": 4.62
+        },
+        "firstSeen": 4.548,
+        "lastSeen": 4.548,
+        "occurrences": 1
+      }
+    ],
+    "enabled": true,
+    "specPath": "/Users/venkatavarshithreddymettukuru/Downloads/motion-video-generator/runs/d4b95c79d1266dbb/composition/index.motion.json",
+    "samples": 300
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.49:1; WCAG AA requires 4.5:1.",
+        "text": "Decisions",
+        "fg": "rgb(0,0,0)",
+        "bg": "rgb(37,42,68)",
+        "ratio": 1.49,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(146,146,146)",
+        "large": false,
+        "selector": "main > section:nth-of-type(4) > div:nth-of-type(2) > div",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 59.953125,
+          "y": 450.390625,
+          "width": 320,
+          "height": 20
+        },
+        "time": 14.444
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.68:1; WCAG AA requires 4.5:1.",
+        "text": "Owners",
+        "fg": "rgb(0,0,0)",
+        "bg": "rgb(39,51,80)",
+        "ratio": 1.68,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(155,155,155)",
+        "large": false,
+        "selector": "main > section:nth-of-type(4) > div:nth-of-type(3) > div",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 504.359375,
+          "y": 450.390625,
+          "width": 320,
+          "height": 20
+        },
+        "time": 14.444
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.111,
+      5.556,
+      10,
+      14.444,
+      18.889
+    ],
+    "checked": 16,
+    "passed": 14
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.27",
+    "latestVersion": "0.8.27",
+    "updateAvailable": false
+  }
+}

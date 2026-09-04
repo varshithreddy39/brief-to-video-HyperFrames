@@ -1,0 +1,329 @@
+{
+  "version": "1.0",
+  "duration": 26.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "theme": "modern AI productivity, clean enterprise interface, deep navy background, electric blue and violet accents, crisp white typography, subtle glassmorphism, optimistic team-focused tone",
+  "scenes": [
+    {
+      "id": "scene_1",
+      "type": "hero",
+      "start": 0.0,
+      "duration": 5.0,
+      "text": [
+        "Work smarter, together",
+        "Meet the AI productivity assistant for modern teams",
+        "Focus. Align. Deliver."
+      ],
+      "visual": "Luminous AI interface layered over a calm team workspace, with connected task nodes, chat bubbles, and soft blue-violet data streams suggesting coordinated teamwork.",
+      "motion": [
+        {
+          "type": "image_zoom",
+          "target": "asset_hero_ai_workspace",
+          "duration": 5.0,
+          "delay": 0.0
+        },
+        {
+          "type": "type_reveal",
+          "target": "scene_1_headline",
+          "duration": 1.0,
+          "delay": 0.4
+        },
+        {
+          "type": "fade_up",
+          "target": "scene_1_text_2",
+          "duration": 0.8,
+          "delay": 1.5
+        },
+        {
+          "type": "fade_in",
+          "target": "scene_1_text_3",
+          "duration": 0.7,
+          "delay": 2.7
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_1_accent",
+          "duration": 0.8,
+          "delay": 3.8
+        }
+      ]
+    },
+    {
+      "id": "scene_2",
+      "type": "feature",
+      "start": 5.0,
+      "duration": 4.5,
+      "text": [
+        "Turn noise into next steps",
+        "Summarize threads, meetings, and tasks",
+        "So everyone knows what matters now"
+      ],
+      "visual": "Abstract split-screen transformation: messy messages, calendar items, and task fragments on the left flow into a clean prioritized action list on the right.",
+      "motion": [
+        {
+          "type": "fade_up",
+          "target": "scene_2_headline",
+          "duration": 0.7,
+          "delay": 0.3
+        },
+        {
+          "type": "slide_right",
+          "target": "scene_2_text_2",
+          "duration": 0.8,
+          "delay": 1.2
+        },
+        {
+          "type": "slide_left",
+          "target": "scene_2_text_3",
+          "duration": 0.8,
+          "delay": 2.4
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_2_accent",
+          "duration": 0.7,
+          "delay": 3.4
+        }
+      ]
+    },
+    {
+      "id": "scene_3",
+      "type": "feature_grid",
+      "start": 9.5,
+      "duration": 6.0,
+      "text": [
+        "Your team’s daily copilot",
+        "Prioritizes tasks",
+        "Drafts updates",
+        "Finds answers",
+        "Automates handoffs"
+      ],
+      "visual": "Four polished feature cards arranged in a balanced grid, each with minimal AI-themed line icons: priority list, document sparkle, search node, and workflow arrow.",
+      "motion": [
+        {
+          "type": "fade_up",
+          "target": "scene_3_header",
+          "duration": 0.7,
+          "delay": 0.3
+        },
+        {
+          "type": "stagger",
+          "target": "scene_3_card_1",
+          "duration": 0.6,
+          "delay": 1.1
+        },
+        {
+          "type": "stagger",
+          "target": "scene_3_card_2",
+          "duration": 0.6,
+          "delay": 1.9
+        },
+        {
+          "type": "stagger",
+          "target": "scene_3_card_3",
+          "duration": 0.6,
+          "delay": 2.9
+        },
+        {
+          "type": "stagger",
+          "target": "scene_3_card_4",
+          "duration": 0.6,
+          "delay": 4.1
+        }
+      ]
+    },
+    {
+      "id": "scene_4",
+      "type": "stats",
+      "start": 15.5,
+      "duration": 4.5,
+      "text": [
+        "Less busywork. More momentum.",
+        "Summaries in seconds",
+        "Meetings to actions",
+        "Knowledge on demand"
+      ],
+      "visual": "Three bold metric-style cards with animated AI signal lines connecting them, emphasizing speed, clarity, and access to team knowledge without unsupported numeric claims.",
+      "motion": [
+        {
+          "type": "fade_up",
+          "target": "scene_4_header",
+          "duration": 0.6,
+          "delay": 0.2
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_4_stat_1",
+          "duration": 0.7,
+          "delay": 0.9
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_4_stat_2",
+          "duration": 0.7,
+          "delay": 1.9
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_4_stat_3",
+          "duration": 0.7,
+          "delay": 3.0
+        }
+      ]
+    },
+    {
+      "id": "scene_5",
+      "type": "image",
+      "start": 20.0,
+      "duration": 3.5,
+      "text": [
+        "One shared command center",
+        "Plans, messages, files, and decisions in sync"
+      ],
+      "visual": "High-fidelity AI productivity dashboard on a widescreen monitor: project timeline, team chat, summarized meeting notes, and suggested next actions unified in one interface.",
+      "motion": [
+        {
+          "type": "image_zoom",
+          "target": "asset_command_center_dashboard",
+          "duration": 3.5,
+          "delay": 0.0
+        },
+        {
+          "type": "fade_up",
+          "target": "scene_5_headline",
+          "duration": 0.6,
+          "delay": 0.3
+        },
+        {
+          "type": "fade_in",
+          "target": "scene_5_text_2",
+          "duration": 0.7,
+          "delay": 1.2
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_5_accent",
+          "duration": 0.6,
+          "delay": 2.5
+        }
+      ]
+    },
+    {
+      "id": "scene_6",
+      "type": "cta",
+      "start": 23.5,
+      "duration": 2.5,
+      "text": [
+        "Give your team an AI edge",
+        "Start working smarter"
+      ],
+      "visual": "Clean closing screen with glowing AI ring, confident CTA button, and small electric-blue decorative sparks around the call to action.",
+      "motion": [
+        {
+          "type": "fade_up",
+          "target": "scene_6_headline",
+          "duration": 0.5,
+          "delay": 0.1
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_6_button",
+          "duration": 0.5,
+          "delay": 0.8
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_6_spark_1",
+          "duration": 0.4,
+          "delay": 1.3
+        },
+        {
+          "type": "fade_in",
+          "target": "scene_6_spark_2",
+          "duration": 0.4,
+          "delay": 1.7
+        },
+        {
+          "type": "scale_in",
+          "target": "scene_6_spark_3",
+          "duration": 0.4,
+          "delay": 2.0
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset_hero_ai_workspace",
+      "type": "image",
+      "prompt": "Modern AI productivity assistant concept in a calm team workspace, luminous blue and violet interface overlays, connected task nodes, chat bubbles, calendar hints, subtle data streams, clean enterprise design, cinematic widescreen composition, no readable text.",
+      "scene_id": "scene_1"
+    },
+    {
+      "id": "asset_command_center_dashboard",
+      "type": "image",
+      "prompt": "High-fidelity widescreen AI productivity dashboard on a sleek monitor, showing project timeline, team chat layout, summarized meeting notes, suggested next actions, glassmorphism UI, navy background with electric blue and violet accents, no readable text.",
+      "scene_id": "scene_5"
+    }
+  ],
+  "motion_assertions": [
+    {
+      "selector": "scene_1_headline",
+      "appears_by": 1.4,
+      "before": null,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "asset_hero_ai_workspace",
+      "appears_by": 0.5,
+      "before": 5.0,
+      "stays_in_frame": true,
+      "keeps_moving": true
+    },
+    {
+      "selector": "scene_2_text_3",
+      "appears_by": 8.2,
+      "before": 9.5,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "scene_3_card_4",
+      "appears_by": 14.2,
+      "before": 15.5,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "scene_4_stat_3",
+      "appears_by": 19.2,
+      "before": 20.0,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "asset_command_center_dashboard",
+      "appears_by": 20.3,
+      "before": 23.5,
+      "stays_in_frame": true,
+      "keeps_moving": true
+    },
+    {
+      "selector": "scene_6_button",
+      "appears_by": 24.8,
+      "before": 26.0,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    },
+    {
+      "selector": "scene_6_spark_3",
+      "appears_by": 25.9,
+      "before": 26.0,
+      "stays_in_frame": true,
+      "keeps_moving": false
+    }
+  ]
+}

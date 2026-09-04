@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+
+        <title>HyperFrames Motion Composition</title>
+
+        <link
+            rel="stylesheet"
+            href="./styles.css"
+        >
+
+        <script src="./gsap.min.js"></script>
+    </head>
+
+    <body
+        data-composition-id="main"
+        data-duration="20.000"
+        data-width="1920"
+        data-height="1080"
+        data-fps="30"
+    >
+
+        <main
+            id="composition"
+            class="composition"
+        >
+            <section
+    id="s1"
+    class="scene scene-image layout-split_left"
+    data-composition-id="s1"
+    data-start="0.000"
+    data-duration="4.000"
+>
+<div
+    id="s1_background"
+    class="background-layer gradient-bg"
+    data-role="background"
+    data-layout-allow-occlusion="true"
+></div>
+<img
+    id="s1_image"
+    class="visual-image full-image"
+    src="./assets/3f38e4aa2a40c87b.png"
+    data-role="image"
+     data-asset-id="s1_meeting_chaos_image"
+    alt=""
+/>
+<h1
+    id="s1_headline"
+    class="headline image-headline"
+    data-role="headline"
+>
+    Meetings become action plans.
+</h1>
+<p
+    id="s1_text_2"
+    class="body-text image-text"
+    data-role="text"
+>
+    An AI assistant captures the chaos.
+</p>
+<p
+    id="s1_text_3"
+    class="body-text image-text"
+    data-role="text"
+>
+    So the room can move forward.
+</p>
+<div
+    id="s1_accent"
+    class="accent-line"
+    data-role="accent"
+></div>
+</section><section
+    id="s2"
+    class="scene scene-feature layout-split_left"
+    data-composition-id="s2"
+    data-start="4.000"
+    data-duration="4.000"
+>
+<div
+    id="s2_background"
+    class="background-layer gradient-bg"
+    data-role="background"
+    data-layout-allow-occlusion="true"
+></div>
+<div
+    id="s2_accent"
+    class="accent-line"
+    data-role="accent"
+></div>
+<div
+    id="s2_signal"
+    class="signal-field"
+    data-role="visual"
+    aria-hidden="true"
+>
+    <div class="signal-halo"></div>
+    <div class="signal-track"></div>
+    <div class="signal-node signal-node-a"></div>
+    <div class="signal-node signal-node-b"></div>
+    <div class="signal-node signal-node-c"></div>
+    <div class="signal-card signal-card-a"><i></i><i></i><i></i></div>
+    <div class="signal-card signal-card-b"><i></i><i></i></div>
+    <div class="signal-card signal-card-c"><i></i><i></i><i></i></div>
+</div>
+<h1
+    id="s2_headline"
+    class="headline feature-headline"
+    data-role="headline"
+>
+    The AI listens.
+</h1>
+<p
+    id="s2_text_2"
+    class="body-text feature-text"
+    data-role="text" style="top: calc(62% + 0 * 70px);"
+>
+    Decisions, risks, open questions.
+</p>
+<p
+    id="s2_text_3"
+    class="body-text feature-text"
+    data-role="text" style="top: calc(62% + 1 * 70px);"
+>
+    No one stops leading.
+</p>
+</section><section
+    id="s3"
+    class="scene scene-feature_grid layout-cards"
+    data-composition-id="s3"
+    data-start="8.000"
+    data-duration="4.000"
+>
+<div
+    id="s3_background"
+    class="background-layer gradient-bg"
+    data-role="background"
+    data-layout-allow-occlusion="true"
+></div>
+<h1
+    id="s3_header"
+    class="headline grid-header"
+    data-role="headline"
+>
+    What it turns into
+</h1>
+<div class="feature-grid-cards"><div
+    id="s3_card_1"
+    class="icon-card glass-card"
+    data-role="feature-card"
+>
+    <div class="feature-icon">
+        ✦
+    </div>
+
+    <div class="feature-title">
+        Decisions
+    </div>
+</div>
+<div
+    id="s3_card_2"
+    class="icon-card glass-card"
+    data-role="feature-card"
+>
+    <div class="feature-icon">
+        ◌
+    </div>
+
+    <div class="feature-title">
+        Owners
+    </div>
+</div>
+<div
+    id="s3_card_3"
+    class="icon-card glass-card"
+    data-role="feature-card"
+>
+    <div class="feature-icon">
+        ✓
+    </div>
+
+    <div class="feature-title">
+        Follow-ups
+    </div>
+</div></div>
+</section><section
+    id="s4"
+    class="scene scene-stats layout-dashboard"
+    data-composition-id="s4"
+    data-start="12.000"
+    data-duration="4.000"
+>
+<div
+    id="s4_background"
+    class="background-layer gradient-bg"
+    data-role="background"
+    data-layout-allow-occlusion="true"
+></div>
+<h1
+    id="s4_header"
+    class="headline stats-header"
+    data-role="headline"
+>
+    Every meeting ends aligned.
+</h1>
+<div class="stats-cards"><div
+    id="s4_stat_1"
+    class="stat-card glass-card"
+    data-role="card"
+>
+    <div class="card-title">
+        Decisions
+    </div>
+
+    
+</div>
+<div
+    id="s4_stat_2"
+    class="stat-card glass-card"
+    data-role="card"
+>
+    <div class="card-title">
+        Owners
+    </div>
+
+    
+</div>
+<div
+    id="s4_stat_3"
+    class="stat-card glass-card"
+    data-role="card"
+>
+    <div class="card-title">
+        Deadlines
+    </div>
+
+    
+</div></div>
+</section><section
+    id="s5"
+    class="scene scene-cta layout-center_stage"
+    data-composition-id="s5"
+    data-start="16.000"
+    data-duration="4.000"
+>
+<div
+    id="s5_background"
+    class="background-layer cta-gradient"
+    data-role="background"
+    data-layout-allow-occlusion="true"
+></div>
+<h1
+    id="s5_headline"
+    class="headline cta-headline"
+    data-role="headline"
+>
+    Leave with next steps.
+</h1>
+<div
+    id="s5_button"
+    class="cta-button"
+    data-role="cta"
+>
+    Try it for your next meeting
+</div>
+<div
+    id="s5_spark_1"
+    class="spark"
+    data-role="spark" style="left: 17%; top: 26%;"
+></div>
+<div
+    id="s5_spark_2"
+    class="spark"
+    data-role="spark" style="right: 17%; top: 39%;"
+></div>
+<div
+    id="s5_spark_3"
+    class="spark"
+    data-role="spark" style="left: 29%; bottom: 20%;"
+></div>
+</section>
+        </main>
+
+        <script>
+    const tl = gsap.timeline({ paused: true });
+
+tl.fromTo("#s1_background", {opacity: 0.94}, {opacity: 1, duration: 2.0, ease: "sine.inOut", repeat: 1, yoyo: true}, 0.0);
+tl.fromTo("#s1_image", {objectPosition: "50% 50%"}, {objectPosition: "54% 50%", duration: 4.0, ease: "none"}, 0.0);
+tl.fromTo("#s1_headline", {opacity: 0, clipPath: "inset(0 100% 0 0)"}, {opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.75, ease: "power3.out"}, 0.09999999999999999);
+tl.fromTo("#s1_text_2", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.65, ease: "power3.out"}, 0.8999999999999999);
+tl.fromTo("#s1_text_3", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.65, ease: "power3.out"}, 2.4000000000000004);
+tl.fromTo("#s2_background", {opacity: 0.94}, {opacity: 1, duration: 2.0, ease: "sine.inOut", repeat: 1, yoyo: true}, 4.0);
+tl.to("#s2_signal", {x: -12, duration: 4.000, ease: "sine.inOut", repeat: 1, yoyo: true}, 4.0);
+tl.fromTo("#s2_accent", {opacity: 1, scaleX: 0.86}, {opacity: 1, scaleX: 1, duration: 0.45, ease: "power2.out"}, 3.95);
+tl.fromTo("#s2_headline", {opacity: 0, clipPath: "inset(0 100% 0 0)"}, {opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.7, ease: "power3.out"}, 4.05);
+tl.fromTo("#s2_text_2", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.65, ease: "power3.out"}, 4.8500000000000005);
+tl.fromTo("#s2_text_3", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.65, ease: "power3.out"}, 6.3500000000000005);
+tl.fromTo("#s3_background", {opacity: 0.94}, {opacity: 1, duration: 2.0, ease: "sine.inOut", repeat: 1, yoyo: true}, 8.0);
+tl.fromTo("#s3_header", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.6, ease: "power3.out"}, 8.049999999999999);
+tl.fromTo("#s3_card_1", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.15)"}, 8.6);
+tl.fromTo("#s3_card_2", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.15)"}, 9.2);
+tl.fromTo("#s3_card_3", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.65, ease: "back.out(1.15)"}, 9.85);
+tl.fromTo("#s4_background", {opacity: 0.94}, {opacity: 1, duration: 2.0, ease: "sine.inOut", repeat: 1, yoyo: true}, 12.0);
+tl.fromTo("#s4_header", {opacity: 0, clipPath: "inset(0 100% 0 0)"}, {opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.65, ease: "power3.out"}, 12.049999999999999);
+tl.fromTo("#s4_stat_1", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.7, ease: "power3.out"}, 12.799999999999999);
+tl.fromTo("#s4_stat_2", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.7, ease: "power3.out"}, 13.5);
+tl.fromTo("#s4_stat_3", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.8, ease: "power3.out"}, 14.799999999999999);
+tl.fromTo("#s5_background", {opacity: 0.94}, {opacity: 1, duration: 2.0, ease: "sine.inOut", repeat: 1, yoyo: true}, 16.0);
+tl.fromTo("#s5_headline", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.75, ease: "back.out(1.15)"}, 16.099999999999998);
+tl.fromTo("#s5_button", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.7, ease: "power3.out"}, 17.0);
+
+window.__timelines["main"] = tl;
+    </script>
+    </body>
+    </html>
+    
