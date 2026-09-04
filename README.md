@@ -49,28 +49,24 @@ deterministically, passed the mandatory HyperFrames gate, and validated by
 ## Architecture
 
 ```mermaid
-flowchart LR
+flowchart TD
     B[Plain-language brief] --> P[Planning agent<br/>gpt-5.5]
     P --> PA[plan.json<br/>printable VideoPlan artifact]
     PA --> PV[Semantic plan validator]
-    PV -->|valid| AP[Asset planner]
     PV -->|invalid/unusable| PR[Planning retry<br/>bounded]
     PR --> P
-
-    AP --> IG[gpt-image-2<br/>only required imagery]
-    IG --> AR[Deterministic asset cache<br/>and registry]
+    PV -->|valid| AP[Asset planner<br/>gpt-image-2]
+    AP --> AR[Deterministic asset cache<br/>and registry]
     AR --> CC[Deterministic compiler<br/>HTML + CSS + GSAP]
     PA --> CC
     CC --> HC[HyperFrames gate<br/>check --json]
-
-    HC -->|ok: true| R[HyperFrames render<br/>MP4]
     HC -->|issues| RL[Repair agent<br/>gpt-5.5]
     RL -->|repaired plan| PV
-    RL -->|repair cap reached| F[Fail loudly with<br/>artifacts and findings]
-
+    RL -->|repair cap reached| F[Fail loudly<br/>artifacts + findings]
+    HC -->|ok: true| R[HyperFrames render<br/>MP4]
     R --> MV[MP4 verifier<br/>duration · FPS · size]
-    MV -->|valid| S[Success<br/>MP4 + complete artifacts]
     MV -->|invalid| F
+    MV -->|valid| S[Success<br/>MP4 + complete artifacts]
 ```
 
 The compiler owns implementation detail: typography, safe layout zones,

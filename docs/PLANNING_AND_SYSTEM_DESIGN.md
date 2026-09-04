@@ -141,10 +141,9 @@ The following were intentionally excluded from the 48-hour scope.
 | Arbitrary product screenshots or live SaaS integrations | They add account/secrets management and make deterministic reruns less reliable. Deterministic UI primitives communicate product behavior cleanly. |
 | Unlimited self-repair | Retrying indefinitely hides failure and can burn API budget. A bounded, artifact-rich failure is more honest and debuggable. |
 
-## 6. Submission evidence
+## 6. Run evidence
 
-For each of the three briefs in `briefs/`, the final submission should include
-the corresponding `submission/runs/<run_id>/` directory. It contains the exact
-brief, printable plan, passing HyperFrames JSON report, final MP4 validation,
-rendered video, assets, composition source, and logs. This makes each demo
-claim reproducible and inspectable.
+For each of the two captured runs, the `runs/<run_id>/` directory contains the
+exact brief, printable plan, passing HyperFrames JSON report, final MP4
+validation, rendered video, assets, composition source, and logs. This makes
+each demo claim reproducible and inspectable.
