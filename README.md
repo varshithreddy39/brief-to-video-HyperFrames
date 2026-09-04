@@ -1,5 +1,7 @@
 # brief-to-video — HyperFrames
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 An end-to-end generator that turns a plain-language creative brief into a
 validated MP4 motion-graphics advertisement. It plans first with `gpt-5.5`,
 generates only the imagery that materially improves the story with
