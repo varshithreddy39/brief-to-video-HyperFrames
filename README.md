@@ -111,7 +111,7 @@ this file.
 
 ```dotenv
 OPENAI_API_KEY=your_private_key
-OPENAI_BASE_URL=https://llm.ganeshnayak.in/v1
+OPENAI_BASE_URL=https://your-openai-compatible-gateway/v1
 PLANNER_MODEL=gpt-5.5
 IMAGE_MODEL=gpt-image-2
 ```
