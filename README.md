@@ -89,7 +89,7 @@ while still allowing every brief to have a distinct visual story.
 
 ### Prerequisites
 
-- Python 3.11+ (tested with Python 3.14)
+- Python 3.11+ (tested with Python 3.12)
 - Node.js 22+ (`hyperframes` requires Node 22 or newer)
 - Docker Desktop running (the pipeline renders with `--docker`)
 - An OpenAI-compatible gateway key with access to `gpt-5.5` and `gpt-image-2`
